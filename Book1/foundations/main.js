@@ -310,3 +310,80 @@ for (const feedback of allFeedback) {
 console.log(`Happy customers: ${happyCustomers}
 Unhappy customers: ${unhappyCustomers}
 `)
+
+
+const coffees = [
+    "light colombian roast", "hawaiian dark roast", "guatemalan blend medium roast",
+    "dark madagascar blend", "jamaican dark blue", "jamaican medium roast",
+    "salvador robusto light"
+]
+
+let output = ""
+
+for (const coffee of coffees) {
+    if (coffee.includes("light")) {
+        output += `I'll have the ${coffee} and drink it black`
+    }
+    else if (coffee.includes("medium")) {
+        output += `I'll have the ${coffee} and add cream only`
+    }
+    else if (coffee.includes("dark")) {
+        output += `I'll have the ${coffee} and add cream and sugar`
+    }
+    output += "\n"
+}
+
+console.log(output)
+
+
+//* chapter 8 . Array and String Methods
+
+const fullName = "Juan,Carlos,Rodriguez"
+const [ firstName, middleName, surName ] = fullName.split(",")
+
+console.log(firstName)  // Juan
+console.log(middleName)  // Carlos
+console.log(surName)  // Rodriguez
+
+const fullName1 = "1Juan::1Carlos::1Rodriguez"
+const [ firstName1, middleName1, surName1 ] = fullName1.split("::")
+
+console.log(firstName1)  // Juan
+console.log(middleName1)  // Carlos
+console.log(surName1)  // Rodriguez
+
+const fullName2 = "2Juan::2Carlos::2Rodriguez"
+const [ firstName2, middleName2, surName2 ] = fullName2.split("::")
+
+console.log(firstName2)  // Juan
+console.log(middleName2)  // Carlos
+console.log(surName2)  // Rodriguez
+
+const sentences = [
+	"Praise the spells and bless the charms,",
+	"I found April in my arms.",
+	"April golden, April cloudy,",
+	"Gracious, cruel, tender, rowdy;"
+]
+
+const wholePoem = sentences.join("")
+
+console.log(wholePoem)
+
+const surprises = [ "lions", "tigers", "bears" ]
+const exclamation = surprises.join(" and ")
+
+console.log(`${exclamation}, oh my`)
+
+const employees = [ "Mary Bulshear", "Kelley Avignon", "Brian Wellington", "Cherie Midreaux" ]
+const listItems = employees.join("</li><li>")
+
+console.log(`<li>${listItems}</li>`)
+
+
+const originalDisorderFormat = "Depression|$|Bipolar|$|Manic|$|Anxiety|$|Anorexia|$|Posttraumtic Stress|$|Seasonal Affective|$|Bulimia"
+
+const listDisorder = originalDisorderFormat.split(" |$| ")
+console.log(` <li>listDisorder</li> `)
+// console.log(listDisorder)
+

@@ -35,6 +35,11 @@ console.log( `you can have a ${variable1} inside of a string`)
 
 // ? .includes("delight")
         // searches a string for the word
+// ? .split
+
+//? .join
+
+
 // ? ${} 
     // ${variable} 
     // The ${} syntax inside the backticks is used to interpolate the value of the totalRainfall variable into the string.

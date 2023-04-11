@@ -49,3 +49,11 @@ if (theyWereOnABreak || theOfficeIsFunny) {
 	// One of the variables' value is true, so this runs
 	console.log("Badely")
 }
+
+
+
+
+const surprises = [ "lions", "tigers", "bears" ]
+const exclamation = surprises.join(" and ")
+
+console.log(`${exclamation}, oh my`)
